@@ -1,7 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8' standalone="yes"?>
 <plugin id="cordova-gmv-barcode-scanner" version="1.2.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-gmv-barcode-scanner</name>
+    <name>Cordova GV Barcode Scaore</name>
+          <description>You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.</description>
+          <license>MIT</license>
+          <repo>https://github.com/dealrinc/cordova-gmv-barcode-scanner/repo>
+          <issue>https://github.com/dealrinc/cordova-gmv-barcode-scannerr/issues</issue>
     <js-module name="cordova-gmv-barcode-scanner" src="www/main.js">
         <clobbers target="cordova.plugins.gmv-barcode-scanner"/>
     </js-module>
