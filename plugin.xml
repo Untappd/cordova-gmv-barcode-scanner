@@ -1,11 +1,7 @@
-<?xml version='1.0' encoding='utf-8' standalone="yes"?>
-<plugin id="cordova-gmv-barcode-scanner" version="1.2.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-gmv-barcode-scanner" version="1.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Cordova GV Barcode Scaore</name>
-          <description>You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.</description>
-          <license>MIT</license>
-          <repo>https://github.com/dealrinc/cordova-gmv-barcode-scanner/repo>
-          <issue>https://github.com/dealrinc/cordova-gmv-barcode-scannerr/issues</issue>
+    <name>cordova-gmv-barcode-scanner</name>
     <js-module name="cordova-gmv-barcode-scanner" src="www/main.js">
         <clobbers target="cordova.plugins.gmv-barcode-scanner"/>
     </js-module>
@@ -68,7 +64,12 @@
                     android:name="com.google.android.gms.vision.DEPENDENCIES"
                     android:value="barcode" />
 
-            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity"></activity>
+            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
             <activity android:label="Read Barcode" android:name="com.dealrinc.gmvScanner.BarcodeCaptureActivity" android:theme="@style/Theme.AppCompat.Light"/>
         </config-file>
 
