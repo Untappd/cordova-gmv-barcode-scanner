@@ -64,13 +64,8 @@
                     android:name="com.google.android.gms.vision.DEPENDENCIES"
                     android:value="barcode" />
 
-            <activity android:label="@string/title_activity_main" android:name="com.dealrinc.gmvScanner.SecondaryActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter>
-            </activity>
-            <activity android:label="Read Barcode" android:name="com.dealrinc.gmvScanner.BarcodeCaptureActivity" android:theme="@style/Theme.AppCompat.Light"/>
+            <activity android:label="@string/title_activity_main" android:screenOrientation="portrait" android:name="com.dealrinc.gmvScanner.SecondaryActivity"></activity>
+            <activity android:label="Read Barcode" android:screenOrientation="portrait" android:name="com.dealrinc.gmvScanner.BarcodeCaptureActivity" android:theme="@style/Theme.AppCompat.Light"/>
         </config-file>
 
         <config-file target="res/values/strings.xml" parent="/*">
